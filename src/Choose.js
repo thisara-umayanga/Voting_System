@@ -6,6 +6,7 @@ const Choose = () => {
   const navigate = useNavigate();
 
   return (
+    
     <div className="choose-container">
       <h1 className="choose-title">Choose Registration Type</h1>
       <div className="button-group">
