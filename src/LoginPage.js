@@ -8,10 +8,10 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // You can validate login credentials here if needed
+    // Optionally: validate login credentials here
 
-    // Navigate to Choose page on submit
-    navigate("/choose");
+    // ✅ Navigate to AdminInterface page
+    navigate("/admininterface");
   };
 
   return (
@@ -34,8 +34,6 @@ const LoginPage = () => {
             placeholder="මුර පදය / Password"
             required
           />
-
-          {/* Updated button to submit form and go to Choose.js */}
           <button type="submit" className="lang-btn">
             Login
           </button>

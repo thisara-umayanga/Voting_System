@@ -1,76 +1,58 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-/* Container with a full-screen background image */
+/* Full-screen container with background */
 .container {
-  position: relative;
+  background-image: url('./image/parliment1.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #4b006e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  z-index: 1;
-  color: #fff;
+  box-sizing: border-box;
 }
 
-/* Full-screen background image behind content */
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url('./image/parliment1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  z-index: -1;
-}
-
-/* Title styling */
+/* Titles */
 .title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4b006e;
   margin: 10px 0;
-  font-size: 1.8em;
-  color: #fff;
 }
 
-/* Button container with gap between buttons */
+/* Button container */
 .button-box {
+  margin-top: 30px;
   display: flex;
-  gap: 20px; /* Gap between Login and Result buttons */
-  margin: 30px auto;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Individual buttons */
+/* Buttons */
 .lang-btn {
   background-color: #b800b8;
   color: white;
   border: none;
   padding: 14px 28px;
-  font-size: 1em;
-  border-radius: 8px;
+  font-size: 1.1em;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
+  min-width: 160px;
 }
 
-/* Hover effect */
 .lang-btn:hover {
   background-color: #990099;
 }
 
-/* Footer styling */
+/* Footer */
 .footer {
-  margin-top: auto;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #ddd;
+  margin-top: 80px;
+  font-size: 0.95em;
+  color: #666;
 }
