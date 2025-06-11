@@ -89,6 +89,8 @@ export default function Regestation() {
                     </select>
                   </td>
                 </tr>
+
+               
               </tbody>
             </table>
 
