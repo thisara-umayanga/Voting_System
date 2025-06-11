@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Regestation.css'; // Import your CSS
 
 export default function Regestation() {
+  const [imagePreview, setImagePreview] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
     alert('Registration Successful');
+  };
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setImagePreview(imageUrl);
+    } else {
+      setImagePreview(null);
+    }
   };
 
   return (
@@ -31,7 +43,7 @@ export default function Regestation() {
 
                 <tr>
                   <td>උපන් දිනය<br />Date of Birth</td>
-                  <td><input type="text" name="age" /></td>
+                  <td><input type="date" name="dob" /></td>
                 </tr>
 
                 <tr>
@@ -90,13 +102,33 @@ export default function Regestation() {
                   </td>
                 </tr>
 
-               
+                <tr>
+                  <td>ඡන්දදායකයාගේ ඡායාරූපය<br />Voter Image</td>
+                  <td colSpan="3">
+                    <input type="file" accept="image/*" onChange={handleImageChange} />
+                    {imagePreview && (
+                      <div style={{ marginTop: '10px' }}>
+                        <img
+                          src={imagePreview}
+                          alt="Voter Preview"
+                          style={{
+                            maxWidth: '150px',
+                            maxHeight: '150px',
+                            borderRadius: '8px',
+                            border: '1px solid #ccc',
+                            marginTop: '10px',
+                          }}
+                        />
+                      </div>
+                    )}
+                  </td>
+                </tr>
               </tbody>
             </table>
 
             <div className="button-group">
               <button type="submit" className="submit-btn">Submit</button>
-              <button type="reset" className="submit-btn">Clear</button>
+              <button type="reset" className="reset-btn">Clear</button>
             </div>
           </form>
         </div>
