@@ -8,6 +8,7 @@ import LoginHome from "./LoginHome"; // ✅ use capital L and H
 import Regestation from "./Regestation";
 import RegestationCandidate from "./RegestationCandidate";
 import Choose from "./Choose";
+import AdminInterface from "./AdminInterface";
 
 
 
@@ -20,6 +21,7 @@ function App() {
        <Route path="/registration" element={<Regestation />} />
        <Route path="/registrationcandidate" element={<RegestationCandidate />} />
         <Route path="/choose" element={<Choose />} />
+        <Route path="/admininterface" element={<AdminInterface />} />
 
 
        
