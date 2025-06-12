@@ -1,71 +1,84 @@
 .choose-container {
+  /* Background image with gradient overlay */
+  background-image:
+    linear-gradient(to bottom right, rgba(240, 244, 248, 0.85), rgba(214, 228, 240, 0.85)),
+    url('./image/parliment1.png'); /* Replace with your actual image path */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.choose-title {
-  font-size: 40px;
-  margin-bottom: 100px;
-  color: rgba(255, 255, 255, 0.9);
-  
+/* rest of your CSS unchanged */
 
+.choose-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 40px;
 }
 
 .button-group {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 250px;
-  margin-bottom: 300px;
+  gap: 20px;
+  width: 300px;
+  align-items: center;
 }
 
 .reg-button {
-  padding: 14px 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
   border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+/* 🎯 Candidate Button */
 .candidate-button {
-  background-color: #007bff;
+  background-color: #00796b;
 }
-
 .candidate-button:hover {
-  background-color: #0056b3;
+  background-color: #004d40;
 }
 
+/* 🎯 Voter Button */
 .form-button {
-  background-color: #28a745;
+  background-color: #1976d2;
 }
-
 .form-button:hover {
-  background-color: #1e7e34;
+  background-color: #125ca1;
 }
 
+/* 🎯 Admin Interface Button */
+.admininterface {
+  background-color: #c62828;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.admininterface:hover {
+  background-color: #8e0000;
+}
 
-.choose-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-
-  /* Background image styling */
-  background-image: url('D:\project\SampleWeb\1st\update 2\src\image\parliment1.png'); /* Replace with your image path or URL */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white; /* Optional: Ensures text is visible over the image */
+/* Footer */
+.footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
 }

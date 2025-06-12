@@ -22,6 +22,15 @@ const Choose = () => {
         >
           Registration Voter
         </button>
+
+        <button
+          className="admininterface"
+          onClick={() => navigate('/admininterface')}
+        >
+          Go Admin Interface
+        </button>
+
+        
       </div>
       <footer className="footer">
         &copy; 2025 Election Commission of Sri Lanka

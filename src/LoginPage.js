@@ -41,7 +41,7 @@ const LoginPage = () => {
       </div>
 
       <footer className="footer">
-        &copy; 2025 Election Commission of Sri Lanka
+        &copy; 2025 Election Commission of Sri Lanka:
       </footer>
     </div>
   );
