@@ -1,53 +1,57 @@
-/* container & background */
-.login-container {
- background-image: url('./image/parliment1.png');
- 
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+/* General reset and font setup */
+body {
   margin: 0;
   padding: 0;
-  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, rgba(240, 244, 255, 0.8), rgba(217, 226, 243, 0.8)),
+              url('./image/parliment1.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Container for the whole login page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Top title */
+.title {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.2em;
+  font-weight: bold;
   text-align: center;
   color: #4b006e;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
 }
 
-/* logo */
-.logo {
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-/* titles */
-.title {
-  margin: 5px 0;
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-/* login box */
+/* Login box styles */
 .login-box {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  margin: 40px auto;
-  border-radius: 16px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
 }
 
-/* login title */
 .login-title {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: #d40084;
+  color: #333;
 }
 
-/* inputs */
+/* Input fields */
 .login-box input[type="text"],
 .login-box input[type="password"] {
-  width: 90%;
+  width: 100%;
   padding: 12px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -56,37 +60,30 @@
   box-sizing: border-box;
 }
 
-.login-box input:focus {
-  outline: none;
-  border-color: #b800b8;
-  box-shadow: 0 0 5px #b800b8;
-}
-
-/* button */
+/* Login button */
 .lang-btn {
-  background-color: #b800b8;
+  background-color: #4b006e;
   color: white;
   border: none;
-  padding: 12px 24px;
-  margin-top: 15px;
+  padding: 12px 20px;
+  width: 100%;
   font-size: 1em;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .lang-btn:hover {
-  background-color: #990099;
+  background-color: #38004f;
 }
 
-/* footer */
+/* Footer */
 .footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 15px;
   font-size: 0.9em;
-  color: #666;
-}
-.bgImage {
-  position: fixed;
-  
-  
+  color: #555;
+  text-align: center;
+  width: 100%;
 }

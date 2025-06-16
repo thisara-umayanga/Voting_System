@@ -16,11 +16,10 @@ const LoginPage = () => {
 
   return (
     <div className="login-container">
-      <h1 className="title">මැතිවරණ කොමිෂන් සභාව</h1>
-      <h2 className="title">Election Commission</h2>
-
+      <h1 className="title">මැතිවරණ කොමිෂන් සභාව<br/>Election Commission</h1>
+     
       <div className="login-box">
-        <h3 className="login-title">Login</h3>
+       
         <form onSubmit={handleSubmit}>
           <input
             type="text"
