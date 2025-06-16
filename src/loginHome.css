@@ -21,8 +21,16 @@
   font-size: 2em;
   font-weight: bold;
   color: #4b006e;
-  margin: 10px 0;
+  margin: 20px 0;
+  text-align: center;
+
+  /* Centering on the page */
+  position: absolute;
+  top: 30px; /* Adjust this value to move it closer/farther from the top */
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 /* Button container */
 .button-box {

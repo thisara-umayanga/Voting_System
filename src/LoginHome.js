@@ -18,9 +18,8 @@ const LoginHome = () => {
     <div className="container">
       <br/><br/><br/>
      
-      <h1 className="title">මැතිවරණ කොමිෂන් සභාව</h1>
-      <h2 className="title">Election Commission</h2>
-
+      <h1 className="title">මැතිවරණ කොමිෂන් සභාව<br/>Election Commission</h1>
+   
      
       <br/><br/><br/><br/><br/>
       <div className="button-box">
