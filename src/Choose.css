@@ -1,8 +1,6 @@
 .choose-container {
-  /* Background image with gradient overlay */
-  background-image:
-    linear-gradient(to bottom right, rgba(240, 244, 248, 0.85), rgba(214, 228, 240, 0.85)),
-    url('./image/parliment1.png'); /* Replace with your actual image path */
+  /* Clear background image without overlay */
+  background-image: url('./image/parliment1.png'); /* Use your actual path */
 
   background-size: cover;
   background-position: center;
